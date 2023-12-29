@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Pseudo-classes</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.cdnfonts.com/css/source-sans-pro" rel="stylesheet">
+
+    
+    <style>
+/* unvisited link */
+.a:link {
+    color: red;
+}
+        
+/* visited link */
+.a:visited {
+    color: green;
+}
+        
+/* mouse over link */
+.a:hover {
+    color: hotpink;
+}
+        
+ /* selected link */
+.a:active {
+    color: blue;
+}
+
+#a.highlight:hover {
+  color: #ff0000;
+  font-size: 22px;
+} 
+
+.div {
+  background-color: green;
+  color: white;
+  padding: 25px;
+  text-align: center;
+}
+
+.div:hover {
+  background-color: blue;
+}
+
+.p {
+  display: none;
+  background-color: yellow;
+  padding: 20px;
+}
+
+.div1:hover p {
+  display: block;
+}
+
+.p1:first-child {
+  color: blue;
+} 
+
+    </style>
+
+</head>
+<body class="body">
+    
+    <div class="mybody">
+    <h1>CSS Pseudo-classes</h1>
+
+    <div class="mybtn_div">
+    <a href="/61CSS_Combinators.html" class="mybtn"><button>Previous</button></a>
+    <a href="/63CSS_Pseudo-elements.html" class="mybtn"><button>Next</button></a>
+    </div>
+
+
+    <h2>Example 1</h2>
+    <h2>Styling a link depending on state</h2>
+
+    <p><b><a href="https://www.w3schools.com/css/default.asp" target="_blank" class="a">This is a link</a></b></p>
+    <p><b>Note:</b> a:hover MUST come after a:link and a:visited in the CSS definition in order to be effective.</p>
+    <p><b>Note:</b> a:active MUST come after a:hover in the CSS definition in order to be effective.</p>
+    
+
+
+    <h2>Example 2</h2>
+    <h2>Pseudo-classes and HTML Classes</h2>
+
+    <p>When you hover over the first link below, it will change color and font size:</p>
+    
+    <p><a class="highlight" href="css_syntax.asp" id="a">CSS Syntax</a></p>
+    
+    <p><a href="https://www.w3schools.com/css/default.asp">CSS Tutorial</a></p>
+
+
+    <h2>Example 3</h2>
+    <p>Mouse over the div element below to change its background color:</p>
+
+    <div class="div">Mouse Over Me</div>
+
+    
+
+    <h2>Example 4</h2>
+    <div class="div1">Hover over this div element to show the p element
+        <p class="p">Tada! Here I am!</p>
+      </div>
+
+
+
+    <h2>Example 5</h2>
+    <p class="p1">This is some text.</p>
+    <p class="p1">This is some text.</p>
+    
+    <div>
+      <p class="p1">This is some text.</p>
+      <p class="p1">This is some text.</p>
+    </div>
+
+
+
+
+
+    <div class="mybtn_div">
+        <a href="/61CSS_Combinators.html" class="mybtn"><button>Previous</button></a>
+        <a href="/63CSS_Pseudo-elements.html" class="mybtn"><button>Next</button></a>
+        </div>
+
+    
+</div>
+
+
+</body>
+</html>

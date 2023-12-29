@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS The !important Rule</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.cdnfonts.com/css/source-sans-pro" rel="stylesheet">
+
+    <style>
+#myid {
+    background-color: blue;
+}
+        
+.myclass {
+    background-color: gray;
+}
+        
+.p {
+    background-color: red !important;
+}
+
+#myid1 {
+  background-color: blue !important;
+}
+
+.myclass1 {
+  background-color: gray !important;
+}
+
+.p1 {
+  background-color: red !important;
+}
+
+.button11 {
+  background-color: #8c8c8c; 
+  color: white;
+  padding: 5px;
+  border: 1px solid black; 
+}
+
+.button12 {
+  background-color: #8c8c8c; 
+  color: white;
+  padding: 5px;
+  border: 1px solid black; 
+}
+
+#myDiv a {
+  color: red;
+  background-color: yellow;  
+}
+
+.button13 {
+  background-color: #8c8c8c !important; 
+  color: white !important;
+  padding: 5px !important;
+  border: 1px solid black !important; 
+}
+
+#myDiv1 a {
+  color: red;
+  background-color: yellow;  
+}
+    
+    </style>
+
+
+</head>
+<body class="body">
+    
+    <div class="mybody">
+    <h1>CSS The !important Rule</h1>
+
+    <div class="mybtn_div">
+    <a href="/76CSS_Specificity.html" class="mybtn"><button>Previous</button></a>
+    <a href="/78CSS_MathFunctions.html" class="mybtn"><button>Next</button></a>
+    </div>
+
+
+ 
+    <h2>Example 1</h2>
+    <p class="p">This is some text in a paragraph.</p>
+
+    <p class="myclass p">This is some text in a paragraph.</p>
+    
+    <p id="myid" class="p">This is some text in a paragraph.</p>
+
+ 
+
+
+    <h2>Example 2</h2>
+
+    <p class="p1"> This is some text in a paragraph.</p>
+
+    <p class="myclass1">This is some text in a paragraph.</p>
+    
+    <p id="myid1" class="p1">This is some text in a paragraph.</p>
+
+
+
+    <h2>Example 3</h2>
+    <p>Standard button: <a class="button11" href="default.asp">CSS Tutorial</a></p>
+
+    <p>Standard button: <a class="button11" href="/html/">HTML Tutorial</a></p>
+   
+    
+
+
+    <h2>Example 4</h2>
+    <p>Standard button: <a class="button12" href="default.asp">CSS Tutorial</a></p>
+
+    <div id="myDiv">
+    <p>A link text inside myDiv: <a href="/html/">HTML Tutorial</a></p>
+    <p>A link button inside myDiv: <a href="/html/" class="button">HTML Tutorial</a></p>
+    </div>
+
+
+    <h2>Example 5</h2>
+    <p>Standard button: <a class="button13" href="default.asp">CSS Tutorial</a></p>
+
+    <div id="myDiv1">
+    <p>A link text inside myDiv: <a href="/html/">HTML Tutorial</a></p>
+    <p>A link button inside myDiv: <a href="/html/" class="button13">HTML Tutorial</a></p>
+    </div>
+
+
+
+
+    <div class="mybtn_div">
+        <a href="/76CSS_Specificity.html" class="mybtn"><button>Previous</button></a>
+        <a href="/78CSS_MathFunctions.html" class="mybtn"><button>Next</button></a>
+        </div>
+
+    
+</div>
+
+
+</body>
+</html>

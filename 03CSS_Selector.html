@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.cdnfonts.com/css/source-sans-pro" rel="stylesheet">
+
+    <style>
+        .p {
+          text-align: center;
+          color: red;
+        } 
+
+        #para1 {
+  text-align: center;
+  color: red;
+}
+.center {
+  text-align: center;
+  color: red;
+}
+
+p.center {
+  text-align: center;
+  color: red;
+}
+
+p.center1 {
+  text-align: center;
+  color: red;
+}
+
+p.large {
+  font-size: 300%;
+}
+
+* {
+  text-align: center;
+  color: blue;
+}
+
+.h1, .h2, .p1 {
+  text-align: center;
+  color: red;
+}
+        </style>
+    
+</head>
+<body class="body">
+    
+    <div class="mybody">
+    <h1>CSS Selectors</h1>
+
+    <div class="mybtn_div">
+    <a href="/02CSS_Syntax.html" class="mybtn"><button>Previous</button></a>
+    <a href="/04CSS_Comments.html" class="mybtn"><button>Next</button></a>
+    </div>
+
+    <h2>Example 1</h2>
+    <p class="p">Every paragraph will be affected by the style.</p>
+    <p id="para1" class="p">Me too!</p>
+    <p class="p">And me!</p>
+
+
+    <h2>Example 2</h2>
+    <p id="para1">Hello World!</p>
+    <p>This paragraph is not affected by the style.</p>
+
+    <h2>Example 3</h2>
+    <h1 class="center">Red and center-aligned heading</h1>
+    <p class="center">Red and center-aligned paragraph.</p>
+    
+    <h2>Example 4</h2>
+    <h1 class="center">This heading will not be affected</h1>
+    <p class="center">This paragraph will be red and center-aligned.</p> 
+
+
+    <h2>Example 5</h2>
+    <h1 class="center1">This heading will not be affected</h1>
+<p class="center1">This paragraph will be red and center-aligned.</p>
+<p class="center large">This paragraph will be red, center-aligned, and in a large font-size.</p> 
+
+
+    <h2>Example 6</h2>
+    <h1>Hello world!</h1>
+
+    <p>Every element on the page will be affected by the style.</p>
+    <p id="para2">Me too!</p>
+    <p>And me!</p>
+
+
+    <h2>Example 7</h2>
+    <h1 class="h1">Hello World!</h1>
+    <h2 class="h2">Smaller heading!</h2>
+    <p class="p1">This is a paragraph.</p>
+
+
+
+
+
+    <div class="mybtn_div">
+        <a href="/02CSS_Syntax.html" class="mybtn"><button>Previous</button></a>
+        <a href="/04CSS_Comments.html" class="mybtn"><button>Next</button></a>
+        </div>
+
+    
+</div>
+
+
+</body>
+</html>

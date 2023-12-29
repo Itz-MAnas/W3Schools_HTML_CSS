@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Table Style</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.cdnfonts.com/css/source-sans-pro" rel="stylesheet">
+
+    <style>
+.table, .td, .th {  
+    border: 1px solid #ddd;
+    text-align: left;
+}
+        
+.table {
+    border-collapse: collapse;
+    width: 100%;
+}
+        
+.th, .td {
+    padding: 15px;
+}
+
+
+.table1 {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.th1, .td1 {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.table2 {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.th2, .td2 {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.tr2:hover {background-color: coral;}
+
+
+.table3 {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.th3, .td3 {
+  text-align: left;
+  padding: 8px;
+}
+
+.tr3:nth-child(even) {background-color: #f2f2f2;}
+
+
+.table4 {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.th4, .td4 {
+  text-align: left;
+  padding: 8px;
+}
+
+.tr4:nth-child(even){background-color: #f2f2f2}
+
+.th4 {
+  background-color: #04AA6D;
+  color: white;
+}
+    </style>
+
+</head>
+<body class="body">
+    
+    <div class="mybody">
+    <h1>CSS Table Style</h1>
+
+    <div class="mybtn_div">
+    <a href="/49CSS_TableAlignment.html" class="mybtn"><button>Previous</button></a>
+    <a href="/51CSS_ResponsiveTable.html" class="mybtn"><button>Next</button></a>
+    </div>
+
+
+    <h2>Example 1</h2>   
+    <h2>The padding Property</h2>
+
+    <p>This property adds space between the border and the content in a table.</p>
+    
+    <table class="table">
+      <tr>
+        <th class="th">Firstname</th>
+        <th class="th">Lastname</th>
+        <th class="th">Savings</th>
+      </tr>
+      <tr>
+        <td class="td">Peter</td>
+        <td class="td">Griffin</td>
+        <td class="td">$100</td>
+      </tr>
+      <tr>
+        <td class="td">Lois</td>
+        <td class="td">Griffin</td>
+        <td class="td">$150</td>
+      </tr>
+      <tr>
+        <td class="td">Joe</td>
+        <td class="td">Swanson</td>
+        <td class="td">$300</td>
+      </tr>
+      <tr>
+        <td class="td">Cleveland</td>
+        <td class="td">Brown</td>
+        <td class="td">$250</td>
+      </tr>
+    </table>
+ 
+    
+
+    <h2>Example 2</h2>
+    <h2>Bordered Table Dividers</h2>
+    <p>Add the border-bottom property to th and td for horizontal dividers:</p>
+    
+    <table class="table1">
+      <tr>
+        <th class="th1">Firstname</th>
+        <th class="th1">Lastname</th>
+        <th class="th1">Savings</th>
+      </tr>
+      <tr>
+        <td class="td1">Peter</td>
+        <td class="td1">Griffin</td>
+        <td class="td1">$100</td>
+      </tr>
+      <tr>
+        <td class="td1">Lois</td>
+        <td class="td1">Griffin</td>
+        <td class="td1">$150</td>
+      </tr>
+      <tr>
+        <td class="td1">Joe</td>
+        <td class="td1">Swanson</td>
+        <td class="td1">$300</td>
+      </tr>
+      <tr>
+        <td class="td1">Cleveland</td>
+        <td class="td1">Brown</td>
+        <td class="td1">$250</td>
+      </tr>
+    </table>    
+
+
+
+
+
+    <h2>Example 3</h2>
+    <h2>Hoverable Table</h2>
+
+    <p>Move the mouse over the table rows to see the effect.</p>
+    
+    <table class="table2">
+      <tr class="tr2">
+        <th class="th2">First Name</th>
+        <th class="th2">Last Name</th>
+        <th class="th2">Points</th>
+      </tr>
+      <tr class="tr2">
+        <td class="td2">Peter</td>
+        <td class="td2">Griffin</td>
+        <td class="td2">$100</td>
+      </tr>
+      <tr class="tr2">
+        <td class="td2">Lois</td>
+        <td class="td2">Griffin</td>
+        <td class="td2">$150</td>
+      </tr>
+      <tr class="tr2">
+        <td class="td2">Joe</td>
+        <td class="td2">Swanson</td>
+        <td class="td2">$300</td>
+      </tr>
+      <tr class="tr2">
+        <td class="td2">Cleveland</td>
+        <td class="td2">Brown</td>
+        <td class="td2">$250</td>
+      </tr>
+    </table>
+
+ 
+
+
+    <h2>Example 4</h2>
+    <h2>Striped Table</h2>
+
+    <p>For zebra-striped tables, use the nth-child() selector and add a background-color to all even (or odd) table rows:</p>
+    
+    <table class="table3">
+      <tr class="tr3">
+      <th class="th3">First Name</th>
+      <th class="th3">Last Name</th>
+      <th class="th3">Points</th>
+      </tr>
+      <tr class="tr3">
+      <td class="td3">Peter</td>
+      <td class="td3">Griffin</td>
+      <td class="td3">$100</td>
+      </tr>
+      <tr class="tr3">
+      <td class="td3">Lois</td>
+      <td class="td3">Griffin</td>
+      <td class="td3">$150</td>
+      </tr>
+      <tr class="tr3">
+      <td class="td3">Joe</td>
+      <td class="td3">Swanson</td>
+      <td class="td3">$300</td>
+      </tr>
+      <tr class="tr3">
+      <td class="td3">Cleveland</td>
+      <td class="td3">Brown</td>
+      <td class="td3">$250</td>
+      </tr>
+    </table>
+    
+
+    <h2>Example 5</h2>
+    <h2>Colored Table Header</h2>
+
+    <table class="table4">
+      <tr class="tr4">
+        <th class="th4">Firstname</th>
+        <th class="th4">Lastname</th>
+        <th class="th4">Savings</th>
+      </tr>
+      <tr class="tr4">
+        <td class="td4">Peter</td>
+        <td class="td4">Griffin</td>
+        <td class="td4">$100</td>
+      </tr>
+      <tr class="tr4">
+        <td class="td4">Lois</td>
+        <td class="td4">Griffin</td>
+        <td class="td4">$150</td>
+      </tr>
+      <tr class="tr4">
+        <td class="td4">Joe</td>
+        <td class="td4">Swanson</td>
+        <td class="td4">$300</td>
+      </tr>
+      <tr class="tr4">
+        <td class="td4">Cleveland</td>
+        <td class="td4">Brown</td>
+        <td class="td4">$250</td>
+    </tr>
+    </table>
+
+
+    <div class="mybtn_div">
+        <a href="/49CSS_TableAlignment.html" class="mybtn"><button>Previous</button></a>
+        <a href="/51CSS_ResponsiveTable.html" class="mybtn"><button>Next</button></a>
+        </div>
+
+    
+</div>
+
+
+</body>
+</html>

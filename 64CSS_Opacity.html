@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Opacity / Transparency</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.cdnfonts.com/css/source-sans-pro" rel="stylesheet">
+
+
+    <style>
+.img {
+    opacity: 0.5;
+}
+
+.img1 {
+  opacity: 0.5;
+}
+
+.img1:hover {
+  opacity: 1.0;
+}
+
+.img2:hover {
+  opacity: 0.5;
+}
+
+#div {
+  background-color: #04AA6D;
+  padding: 10px;
+}
+
+#div.first {
+  opacity: 0.1;
+}
+
+#div.second {
+  opacity: 0.3;
+}
+
+#div.third {
+  opacity: 0.6;
+}
+
+#div1 {
+  background: rgb(4, 170, 109);
+  padding: 10px;
+}
+
+#div1.first {
+  background: rgba(4, 170, 109, 0.1);
+}
+
+#div1.second {
+  background: rgba(4, 170, 109, 0.3);
+}
+
+#div1.third {
+  background: rgba(4, 170, 109, 0.6);
+}
+    </style>
+
+</head>
+<body class="body">
+    
+    <div class="mybody">
+    <h1>CSS Opacity / Transparency</h1>
+
+    <div class="mybtn_div">
+    <a href="/63CSS_Pseudo-elements.html" class="mybtn"><button>Previous</button></a>
+    <a href="/65CSS_NavigationBar.html" class="mybtn"><button>Next</button></a>
+    </div>
+
+
+    <h2>Example 1</h2>
+    <h1>Image Transparency</h1>
+    <p>The opacity property specifies the transparency of an element. The lower the value, the more transparent:</p>
+    
+    <p>Image with 50% opacity:</p>
+    <img src="img_forest.jpg" alt="Forest" width="170" height="100" class="img">
+
+
+
+    <h2>Example 2</h2>
+    <h1>Image Transparency</h1>
+    <p>The opacity property is often used together with the :hover selector to change the opacity on mouse-over:</p>
+    <img src="img_forest.jpg" alt="Forest" width="170" height="100" class="img1">
+    <img src="img_mountains.jpg" alt="Mountains" width="170" height="100" class="img1">
+    <img src="img_5terre.jpg" alt="Italy" width="170" height="100" class="img1">
+
+
+
+    <h2>Example 3</h2>
+    <h1>Image Transparency</h1>
+    <p>The opacity property is often used together with the :hover selector to change the opacity on mouse-over:</p>
+    <img src="img_forest.jpg" alt="Forest" width="170" height="100" class="img2">
+    <img src="img_mountains.jpg" alt="Mountains" width="170" height="100" class="img2">
+    <img src="img_5terre.jpg" alt="Italy" width="170" height="100" class="img2">
+
+    
+
+    <h2>Example 4</h2>
+    <h1>Transparent Box</h1>
+    <p>When using the opacity property to add transparency to the background of an element, all of its child elements become transparent as well. This can make the text inside a fully transparent element hard to read:</p>
+    
+    <div class="first" id="div"><p>opacity 0.1</p></div>
+    <div class="second" id="div"><p>opacity 0.3</p></div>
+    <div class="third" id="div"><p>opacity 0.6</p></div>
+    <div id="div"><p>opacity 1 (default)</p></div>
+
+
+
+    <h2>Example 5</h2>
+    <h1>Transparent Box</h1>
+    <p>With opacity:</p>
+    <div style="opacity:0.1;" id="div1"><p>10% opacity</p></div>
+    <div style="opacity:0.3;" id="div1"><p>30% opacity</p></div>
+    <div style="opacity:0.6;" id="div1"><p>60% opacity</p></div>
+    <div id="div1"><p>opacity 1</p></div>
+    
+    <p>With RGBA color values:</p>
+    <div class="first" id="div1"><p>10% opacity</p></div>
+    <div class="second" id="div1"><p>30% opacity</p></div>
+    <div class="third" id="div1"><p>60% opacity</p></div>
+    <div id="div1"><p>default</p></div>
+    
+    <p>Notice how the text gets transparent as well as the background color when using the opacity property.</p>
+
+
+
+
+    <div class="mybtn_div">
+        <a href="/63CSS_Pseudo-elements.html" class="mybtn"><button>Previous</button></a>
+        <a href="/65CSS_NavigationBar.html" class="mybtn"><button>Next</button></a>
+        </div>
+
+    
+</div>
+
+
+</body>
+</html>

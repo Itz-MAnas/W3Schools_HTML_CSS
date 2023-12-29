@@ -1,0 +1,31 @@
+.mybody{
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+
+
+.mybtn_div{
+    display: flex;
+    gap: 70%;
+}
+.mybtn button{
+    border: none;
+    padding: 8px 19px;
+    text-decoration: none;
+    background-color: #04AA6D;
+    color: #fff;
+    border-radius: 5px;
+    font-weight: bolder;
+    font-size: 18px;
+    font-family: 'Source Sans Pro',sans-serif;
+
+}
+
+.mybtn button:hover{
+    cursor: pointer;
+}
+
+body h2,h1{
+    font-family: 'Segoe UI', Arial, sans-serif;
+}

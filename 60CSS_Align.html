@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Layout - Horizontal & Vertical Align</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.cdnfonts.com/css/source-sans-pro" rel="stylesheet">
+
+    <style>
+.center {
+  margin: auto;
+     width: 60%;
+    border: 3px solid #73AD21;
+    padding: 10px;
+}
+
+.center1 {
+  text-align: center;
+  border: 3px solid green;
+}
+
+.img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.right {
+  position: absolute;
+  right: 0px;
+  width: 300px;
+  border: 3px solid #73AD21;
+  padding: 10px;
+}
+
+.right1 {
+  float: right;
+  width: 300px;
+  border: 3px solid #73AD21;
+  padding: 10px;
+}
+
+#div {
+  border: 3px solid #4CAF50;
+  padding: 5px;
+}
+
+.img1 {
+  float: right;
+}
+
+.img2 {
+  float: right;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.center2 {
+  padding: 70px 0;
+  border: 3px solid green;
+}
+
+.center3 {
+  padding: 70px 0;
+  border: 3px solid green;
+  text-align: center;
+}
+
+.center4 {
+  line-height: 200px;
+  height: 200px;
+  border: 3px solid green;
+  text-align: center;
+}
+
+.center4 p {
+  line-height: 1.5;
+  display: inline-block;
+  vertical-align: middle;
+}
+    </style>
+
+
+
+</head>
+<body class="body">
+    
+    <div class="mybody">
+    <h1>CSS Layout - Horizontal & Vertical Align</h1>
+
+    <div class="mybtn_div">
+    <a href="/59CSS_InlineBlock.html" class="mybtn"><button>Previous</button></a>
+    <a href="/61CSS_Combinators.html" class="mybtn"><button>Next</button></a>
+    </div>
+
+
+    <h2>Example 1</h2>
+    <h2>Center Align Elements</h2>
+    <p>To horizontally center a block element (like div), use margin: auto;</p>
+    
+    <div class="center">
+      <p>Hello World!</p>
+    </div>
+    
+
+
+    <h2>Example 2</h2>
+    <h2>Center Text</h2>
+
+    <div class="center1">
+      <p>This text is centered.</p>
+    </div>
+
+
+
+    <h2>Example 3</h2>
+    <h2>Center an Image</h2>
+    <p>To center an image, set left and right margin to auto, and make it into a block element.</p>
+    
+    <img src="paris.jpg" alt="Paris" style="width:40%" class="img">
+
+    
+
+    <h2>Example 4</h2>
+    <h2>Right align with the position property</h2>
+
+    <p>An example of how to right align elements with the position property:</p>
+    
+    <div class="right">
+      <p>In my younger and more vulnerable years my father gave me some advice that I've been turning over in my mind ever since.</p>
+    </div>
+
+
+
+    <h2>Example 5</h2>
+    <h2>Right align with the float property</h2>
+
+    <p>An example of how to right align elements with the float property:</p>
+    
+    <div class="right1">
+      <p>In my younger and more vulnerable years my father gave me some advice that I've been turning over in my mind ever since.</p>
+    </div>
+    
+
+
+
+    <h2>Example 6</h2>
+    <h2>Without Clearfix</h2>
+
+    <p>This image is floated to the right. It is also taller than the element containing it, so it overflows outside of its container:</p>
+    
+    <div id="div">
+      <img class="img1" src="pineapple.jpg" alt="Pineapple" width="170" height="170">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet...
+    </div>
+    
+    <h2 style="clear:right">With New Modern Clearfix</h2>
+    <p>Add the clearfix hack to the containing element, to fix this problem:</p>
+    
+    <div class="clearfix" id="div">
+      <img class="img2" src="pineapple.jpg" alt="Pineapple" width="170" height="170">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet...
+    </div>
+    
+
+    <h2>Example 7</h2>
+    <h2>Center vertically with padding</h2>
+
+    <p>In this example, we use the padding property to center the div element vertically:</p>
+    
+    <div class="center2">
+      <p>I am vertically centered.</p>
+    </div>
+
+
+    <h2>Example 8</h2>
+    <h2>Center with padding and text-align</h2>
+
+    <p>In this example, we use padding and text-align to center the div element both vertically and horizontally:</p>
+    
+    <div class="center3">
+      <p>I am vertically and horizontally centered.</p>
+    </div>
+
+
+    <h2>Example 9</h2>
+    <h2>Center with line-height</h2>
+
+    <p>In this example, we use the line-height property with a value that is equal to the height property to center the div element:</p>
+    
+    <div class="center4">
+      <p>I am vertically and horizontally centered.</p>
+    </div>
+
+
+
+
+
+
+    <div class="mybtn_div">
+        <a href="/59CSS_InlineBlock.html" class="mybtn"><button>Previous</button></a>
+        <a href="/61CSS_Combinators.html" class="mybtn"><button>Next</button></a>
+        </div>
+
+    
+</div>
+
+
+</body>
+</html>

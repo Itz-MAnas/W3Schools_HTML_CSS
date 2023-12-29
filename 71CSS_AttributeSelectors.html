@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Attribute Selectors</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.cdnfonts.com/css/source-sans-pro" rel="stylesheet">
+
+    <style>
+.a[target] {
+    background-color: yellow;
+}
+
+.a1[target="_blank"] {
+  background-color: yellow;
+}
+
+[title~="flower"] {
+  border: 5px solid yellow;
+}
+
+[class|="top"] {
+  background: yellow;
+}
+
+[class^="top1"] {
+  background: yellow;
+}
+
+[class$="test"] {
+  background: yellow;
+}
+
+[class*="te"] {
+  background: yellow;
+}
+
+input[type="text11"] {
+  width: 150px;
+  display: block;
+  margin-bottom: 10px;
+  background-color: yellow;
+}
+
+input[type="button11"] {
+  width: 120px;
+  margin-left: 35px;
+  display: block;
+}
+    </style>
+
+</head>
+<body class="body">
+    
+    <div class="mybody">
+    <h1>CSS Attribute Selectors</h1>
+
+    <div class="mybtn_div">
+    <a href="/70CSS_ImageSprites.html" class="mybtn"><button>Previous</button></a>
+    <a href="/72CSS_Forms.html" class="mybtn"><button>Next</button></a>
+    </div>
+
+
+ 
+    <h2>Example 1</h2>
+    <h2>CSS [attribute] Selector</h2>
+    <p>The links with a target attribute gets a yellow background:</p>
+    
+    <a href="https://www.w3schools.com" class="a">w3schools.com</a>
+    <a href="http://www.disney.com" target="_blank" class="a">disney.com</a>
+    <a href="http://www.wikipedia.org" target="_top" class="a">wikipedia.org</a>
+ 
+
+
+    <h2>Example 2</h2>
+    <h2>CSS [attribute="value"] Selector</h2>
+    <p>The link with target="_blank" gets a yellow background:</p>
+    
+    <a href="https://www.w3schools.com" class="a1">w3schools.com</a>
+    <a href="http://www.disney.com" target="_blank" class="a1">disney.com</a>
+    <a href="http://www.wikipedia.org" target="_top" class="a1">wikipedia.org</a>
+
+
+
+
+    <h2>Example 3</h2>
+    <h2>CSS [attribute~="value"] Selector</h2>
+    <p>All images with the title attribute containing the word "flower" get a yellow border.</p>
+    
+    <img src="klematis.jpg" title="klematis flower" width="150" height="113">
+    <img src="img_flwr.gif" title="flower" width="224" height="162">
+    <img src="img_tree.gif" title="tree" width="200" height="358">
+   
+    
+
+
+    <h2>Example 4</h2>
+    <h2>CSS [attribute|="value"] Selector</h2>
+
+    <h1 class="top-header">Welcome</h1>
+    <p class="top-text">Hello world!</p>
+    <p class="topcontent">Are you learning CSS?</p>
+
+
+
+    <h2>Example 5</h2>
+    <h2>CSS [attribute^="value"] Selector</h2>
+
+    <h1 class="top1-header">Welcome</h1>
+    <p class="top1-text">Hello world!</p>
+    <p class="top1content">Are you learning CSS?</p>
+    
+
+
+
+    <h2>Example 6</h2>
+    <h2>CSS [attribute$="value"] Selector</h2>
+
+    <div class="first_test">The first div element.</div>
+    <div class="second">The second div element.</div>
+    <div class="my-test">The third div element.</div>
+    <p class="mytest">This is some text in a paragraph.</p>
+
+
+    
+
+    <h2>Example 7</h2>
+    <h2>CSS [attribute*="value"] Selector</h2>
+
+    <div class="first_test">The first div element.</div>
+    <div class="second">The second div element.</div>
+    <div class="my-test">The third div element.</div>
+    <p class="mytest">This is some text in a paragraph.</p>
+
+
+    <h2>Example 8</h2>
+    <h2>Styling Forms</h2>
+
+    <form name="input" action="" method="get">
+      Firstname:<input type="text11" name="Name" value="Peter" size="20">
+      Lastname:<input type="text11" name="Name" value="Griffin" size="20">
+      <input type="button" value="Example Button">
+    </form>
+
+
+
+    <div class="mybtn_div">
+        <a href="/70CSS_ImageSprites.html" class="mybtn"><button>Previous</button></a>
+        <a href="/72CSS_Forms.html" class="mybtn"><button>Next</button></a>
+        </div>
+
+    
+</div>
+
+
+</body>
+</html>

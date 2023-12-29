@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Links</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.cdnfonts.com/css/source-sans-pro" rel="stylesheet">
+
+
+    <style>
+.a {
+    color: hotpink;
+}
+
+        /* unvisited link */
+.a1:link {
+  color: red;
+}
+
+/* visited link */
+.a1:visited {
+  color: green;
+}
+
+/* mouse over link */
+.a1:hover {
+  color: hotpink;
+}
+
+/* selected link */
+.a1:active {
+  color: blue;
+}
+
+.a2:link {
+  text-decoration: none;
+}
+
+.a2:visited {
+  text-decoration: none;
+}
+
+.a2:hover {
+  text-decoration: underline;
+}
+
+.a2:active {
+  text-decoration: underline;
+}
+
+.a3:link {
+  background-color: yellow;
+}
+
+.a3:visited {
+  background-color: cyan;
+}
+
+.a3:hover {
+  background-color: lightgreen;
+}
+
+.a3:active {
+  background-color: hotpink;
+}
+
+.a4:link, .a4:visited {
+  background-color: #f44336;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.a4:hover, .a4:active {
+  background-color: red;
+}
+
+
+a.one:link {color:#ff0000;}
+a.one:visited {color:#0000ff;}
+a.one:hover {color:#ffcc00;}
+
+a.two:link {color:#ff0000;}
+a.two:visited {color:#0000ff;}
+a.two:hover {font-size:150%;}
+
+a.three:link {color:#ff0000;}
+a.three:visited {color:#0000ff;}
+a.three:hover {background:#66ff66;}
+
+a.four:link {color:#ff0000;}
+a.four:visited {color:#0000ff;}
+a.four:hover {font-family:monospace;}
+
+a.five:link {color:#ff0000;text-decoration:none;}
+a.five:visited {color:#0000ff;text-decoration:none;}
+a.five:hover {text-decoration:underline;}
+
+
+.a5:link, .a5:visited {
+  background-color: white;
+  color: black;
+  border: 2px solid green;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.a5:hover, .a5:active {
+  background-color: green;
+  color: white;
+}
+    </style>
+
+</head>
+<body class="body">
+    
+    <div class="mybody">
+    <h1>CSS Links</h1>
+
+    <div class="mybtn_div">
+    <a href="/44CSS_Icons.html" class="mybtn"><button>Previous</button></a>
+    <a href="/46CSS_Lists.html" class="mybtn"><button>Next</button></a>
+    </div>
+
+
+    <h2>Example 1</h2>   
+    <h2>Style a link with a color</h2>
+
+    <p><b><a href="https://www.w3schools.com/css/default.asp" target="_blank" class="a">This is a link</a></b></p>
+    
+
+    <h2>Example 2</h2>
+    <h2>Styling a link depending on state</h2>
+
+    <p><b><a href="https://www.w3schools.com/css/default.asp" target="_blank" class="a1">This is a link</a></b></p>
+    <p><b>Note:</b> a:hover MUST come after a:link and a:visited in the CSS definition in order to be effective.</p>
+    <p><b>Note:</b> a:active MUST come after a:hover in the CSS definition in order to be effective.</p>
+
+
+    <h2>Example 3</h2>
+    <h2>Styling a link with text-decoration property</h2>
+
+    <p><b><a href="https://www.w3schools.com/css/default.asp" target="_blank" class="a2">This is a link</a></b></p>
+    <p><b>Note:</b> a:hover MUST come after a:link and a:visited in the CSS definition in order to be effective.</p>
+    <p><b>Note:</b> a:active MUST come after a:hover in the CSS definition in order to be effective.</p>
+
+
+    <h2>Example 4</h2>
+    <h2>Styling a link with background-color property</h2>
+
+    <p><b><a href="https://www.w3schools.com/css/default.asp" target="_blank" class="a3">This is a link</a></b></p>
+    <p><b>Note:</b> a:hover MUST come after a:link and a:visited in the CSS definition in order to be effective.</p>
+    <p><b>Note:</b> a:active MUST come after a:hover in the CSS definition in order to be effective.</p>
+    
+
+    <h2>Example 5</h2>
+    <h2>Link Button</h2>
+
+    <p>A link styled as a button:</p>
+    <a href="https://www.w3schools.com/css/default.asp" target="_blank" class="a4">This is a link</a>
+
+
+    <h2>Example 6</h2>
+    <h2>Styling Links</h2>
+
+    <p>Mouse over the links and watch them change layout:</p>
+    
+    <p><b><a class="one" href="https://www.w3schools.com/css/default.asp" target="_blank">This link changes color</a></b></p>
+    <p><b><a class="two" href="https://www.w3schools.com/css/default.asp" target="_blank">This link changes font-size</a></b></p>
+    <p><b><a class="three" href="https://www.w3schools.com/css/default.asp" target="_blank">This link changes background-color</a></b></p>
+    <p><b><a class="four" href="https://www.w3schools.com/css/default.asp" target="_blank">This link changes font-family</a></b></p>
+    <p><b><a class="five" href="https://www.w3schools.com/css/default.asp" target="_blank">This link changes text-decoration</a></b></p>
+    
+    
+
+    <h2>Example 7</h2>
+    <h2>Link Button</h2>
+
+    <a href="https://www.w3schools.com/css/default.asp" target="_blank" class="a5">This is a link</a>
+
+
+    <h2>Example 8</h2>
+    <h2>The cursor Property</h2>
+
+    <p>Mouse over the words to change the cursor.</p>
+    <span style="cursor:auto">auto</span><br>
+    <span style="cursor:crosshair">crosshair</span><br>
+    <span style="cursor:default">default</span><br>
+    <span style="cursor:e-resize">e-resize</span><br>
+    <span style="cursor:help">help</span><br>
+    <span style="cursor:move">move</span><br>
+    <span style="cursor:n-resize">n-resize</span><br>
+    <span style="cursor:ne-resize">ne-resize</span><br>
+    <span style="cursor:nw-resize">nw-resize</span><br>
+    <span style="cursor:pointer">pointer</span><br>
+    <span style="cursor:progress">progress</span><br>
+    <span style="cursor:s-resize">s-resize</span><br>
+    <span style="cursor:se-resize">se-resize</span><br>
+    <span style="cursor:sw-resize">sw-resize</span><br>
+    <span style="cursor:text">text</span><br>
+    <span style="cursor:w-resize">w-resize</span><br>
+    <span style="cursor:wait">wait</span><br>
+
+
+
+
+    <div class="mybtn_div">
+        <a href="/44CSS_Icons.html" class="mybtn"><button>Previous</button></a>
+        <a href="/46CSS_Lists.html" class="mybtn"><button>Next</button></a>
+        </div>
+
+    
+</div>
+
+
+</body>
+</html>

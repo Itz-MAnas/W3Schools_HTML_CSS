@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Horizontal Navigation Bar</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.cdnfonts.com/css/source-sans-pro" rel="stylesheet">
+
+
+    <style>
+.ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+        
+.li {
+    display: inline;
+}
+
+
+.ul1 {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.li1 {
+  float: left;
+}
+
+.li1 a {
+  display: block;
+  padding: 8px;
+  background-color: #dddddd;
+}
+
+.ul2 {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #dddddd;
+}
+
+.li2 {
+  float: left;
+}
+
+.li2 a {
+  display: block;
+  padding: 8px;
+}
+
+.ul3 {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+.li3 {
+  float: left;
+}
+
+.li3 a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.li3 a:hover {
+  background-color: #111;
+}
+
+
+.ul4 {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+.li4 {
+  float: left;
+}
+
+.li4 a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.li4 a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active1 {
+  background-color: #04AA6D;
+}
+
+.ul5 {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+.li5 {
+  float: left;
+}
+
+.li5 a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.li5 a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active2 {
+  background-color: #04AA6D;
+}
+    </style>
+
+</head>
+<body class="body">
+    
+    <div class="mybody">
+    <h1>CSS Horizontal Navigation Bar</h1>
+
+    <div class="mybtn_div">
+    <a href="/66CSS_VerticalNavBar.html" class="mybtn"><button>Previous</button></a>
+    <a href="/68CSS_Dropdowns.html" class="mybtn"><button>Next</button></a>
+    </div>
+
+
+    <h2>Example 1</h2>
+    <ul class="ul">
+        <li class="li"><a href="#home">Home</a></li>
+        <li class="li"><a href="#news">News</a></li>
+        <li class="li"><a href="#contact">Contact</a></li>
+        <li class="li"><a href="#about">About</a></li>
+      </ul>
+
+
+
+    <h2>Example 2</h2>
+    <ul class="ul1">
+        <li class="li1"><a href="#home">Home</a></li>
+        <li class="li1"><a href="#news">News</a></li>
+        <li class="li1"><a href="#contact">Contact</a></li>
+        <li class="li1"><a href="#about">About</a></li>
+      </ul>
+      
+      <p><b>Note:</b> If a !DOCTYPE is not specified, floating items can produce unexpected results.</p>
+      <p>A background color is added to the links to show the link area. The whole link area is clickable, not just the text.</p>
+      <p><b>Note:</b> overflow:hidden is added to the ul element to prevent li elements from going outside of the list.</p>
+
+
+
+    <h2>Example 3</h2>
+    <ul class="ul2">
+        <li class="li2"><a href="#home">Home</a></li>
+        <li class="li2"><a href="#news">News</a></li>
+        <li class="li2"><a href="#contact">Contact</a></li>
+        <li class="li2"><a href="#about">About</a></li>
+      </ul>
+      
+      <p>A background color is added to the list instead of each link to create a full-width background color.</p>
+      <p><b>Note:</b> overflow:hidden is added to the ul element to prevent li elements from going outside of the list.</p>
+
+    
+
+    <h2>Example 4</h2>
+    <ul class="ul3">
+        <li class="li3"><a class="active" href="#home">Home</a></li>
+        <li class="li3"><a href="#news">News</a></li>
+        <li class="li3"><a href="#contact">Contact</a></li>
+        <li class="li3"><a href="#about">About</a></li>
+      </ul>
+
+
+
+    <h2>Example 5</h2>
+    <ul class="ul4">
+        <li class="li4"><a class="active1" href="#home">Home</a></li>
+        <li class="li4"><a href="#news">News</a></li>
+        <li class="li4"><a href="#contact">Contact</a></li>
+        <li class="li4"><a href="#about">About</a></li>
+      </ul>
+    
+
+
+
+    <h2>Example 6</h2>
+    <ul class="ul5">
+        <li class="li5"><a href="#home">Home</a></li>
+        <li class="li5"><a href="#news">News</a></li>
+        <li class="li5"><a href="#contact">Contact</a></li>
+        <li style="float:right" class="li5"><a class="active2" href="#about">About</a></li>
+      </ul>
+
+
+
+      <div class="mybtn_div">
+        <a href="/66CSS_VerticalNavBar.html" class="mybtn"><button>Previous</button></a>
+        <a href="/68CSS_Dropdowns.html" class="mybtn"><button>Next</button></a>
+        </div>
+
+    
+</div>
+
+
+</body>
+</html>
